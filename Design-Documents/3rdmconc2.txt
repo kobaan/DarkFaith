@@ -1,0 +1,42 @@
+Modularisierter Aufbau:
+
+Welt ist komplett designed, Storys laufen in Modulen,
+die die Welt teilweise erweitern.
+z.B.: In der Welt: Haus -> im Modul: mit Keller
+
+
+Begrenztes Multiplayinger:
+
+Kein massives Multiplaying, da dadurch die Story
+inkonsistent wird, und zum Haudrauf-Spiel mutiert.
+LAN und Peer-to-Peer sollten auf die Party und
+auf das jeweilige Storymodul begrenzt sein.
+
+
+Moduleditor:
+
+Gamemaster koennen ihre eigenen Module designen und
+Regelwerke aufstellen.
+
+
+Charakter mit Modul-Stand:
+
+Gespielte Module werden mit dem Charakter gespeichert,
+somit kann ein Charakter zu einer anderen Gruppe
+importiert werden und in einem neuen Modul mitspielen.
+
+
+Athomsphere Middleages DarkEmpire:
+
+Kein ich bin der Held und erlebe was Spiel, sondern
+alle werden von einem bösen Herrscher bedroht.
+
+
+
+
+
+
+
+
+
+

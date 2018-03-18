@@ -1,0 +1,16 @@
+Plandatum	Milestones	Vergangen	Monate
+Okt 2001	Grundidee	0,1	0,1
+Feb 2002	Studium Progr./Games	3,1	3
+Apr 2002	Genrewahl	3,3	0,2
+Mai 2002	Designdokument	4,3	1
+Jun 2002	einzel. Storyelemente	7,3	3
+Sep 2002	vollständ. Storyboard	13,3	6
+Mrz 2003	Background-Design	17,3	4
+Jun 2003	Character-Design	23,3	6
+Dez 2003	Grafik / Animation	29,3	6
+Mrz 2004	Music / Sounds	32,3	3
+Apr 2004	Preview	33,3	1
+Mai 2004	Alpha-Test	35,3	2
+Jul 2004	Beta-Test	39,3	4
+Okt 2004	Release 1.0	39,3	0
+

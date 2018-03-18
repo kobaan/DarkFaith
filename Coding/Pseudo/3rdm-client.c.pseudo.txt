@@ -1,0 +1,84 @@
+/* 3rd Millenium RPG Game
+   
+   client.c V0.0.001
+   
+   2002/06/03 - pseudo code (ab)
+*/
+
+// Pseudo-Code
+
+main() {
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* ========================================================================= */
+
+initClient();
+
+playIntro();
+
+startInputThread();
+startSoundThread();
+
+displayMenu() {
+	in_menu=1;
+	
+	while (in_menu) {
+	getKeyboardInput();
+	case menu: displaythismenu();
+	if (game_started) in_menu=0;
+}
+
+// start the Gameloop:
+
+while (game_started) {
+
+
+// INPUT
+getCoordinates();
+getMouseEvents();
+getKeyboardEvents();
+
+// EVENTS
+prepareEvents();
+sendEvents();
+getEvents();
+
+// ACTIONS
+decodeEvents();
+replayAction();
+updateMovements();
+queueEffects();
+
+// GRAPHICS
+updateGraphics() {
+
+	drawScenery();
+	drawObjects();
+	drawFigures();
+	drawEffects();
+	drawMenu();
+	drawOSD();
+	drawPointer();
+}
+
+
+// SOUND
+playBackgroundMusic();
+playSoundEffects();
+playCD();
+mixAudio();
+feedBuffer();
+fadeAudio();
+
+
+if (in_menu) game_started=0;
+
+
+}
+
+exit(1);
+
+
+}

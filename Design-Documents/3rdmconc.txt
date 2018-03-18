@@ -1,0 +1,232 @@
+benoetigte Programmroutinen:
+- Zufallszahlengenerator für Würfel
+
+
+Spielelemente:
+
+
+
+Spieldesign:
+- Menu (siehe BlueMenu Grafik)
+- Charakter-Generator
+- Inventory-Screen
+- Spellbook
+- Journal/Chat
+- Dialogbox/scroller
+- Karte
+- Optionen
+- Objectviewer (Waffen/Rüstung/Schilde/Sonstiges)
+
+
+Schirmgestaltung:
+- Menupunkte wählbar über Trackball-System rotierender Kristall-Würfel mit N-Seiten
+  X-Achse ist Menüpunkt, Y-Achse ist MenuWert
+- evtl. Radarkarte
+- Hitpoints-History
+
+
+
+3D-Entwicklung:
+- Blender Maps
+- AC3D Objects
+
+
+
+Waffen:
+
+Bögen:
+Kurzbogen
+Langbogen
+Kombinationsbogen
+Pfeile
+
+Äxte:
+Wurfaxt
+Streitaxt
+
+Schwerter:
+Dolch
+Kurzschwert
+Langschwert
+beidhändiges Schwert
+Degen
+Ninjaschwert
+
+Schusswaffen:
+Armbrust
+Bolzen
+Schleuder
+Kugel
+Stein
+
+Wurfwaffen:
+Speer
+Wurfpfeil
+Wurfmesser
+Speeraxt
+
+Spitzwaffen:
+Margenstern
+Dreschflegel
+
+Stumpfwaffen:
+Knüppel
+Stock
+Stock mit Speerenden
+Streitkolben
+
+
+
+Rüstung:
+Lederrüstung
+Lederrüstung mit Metallnieten
+Lederrüstung mit Metallringen
+Kettenhemd
+Kettenhemd mit Metallplatten
+Vollmetallrüstung
+
+
+Schilde:
+Grosses Schild
+Mittleres Schild
+Kleines Schild
+Armschienen
+Beinschienen
+
+
+Sonstiges Tragbares:
+Amulett
+Kette
+Stiefel
+Armreif
+Handschuhe
+Gürtel
+Helm
+Ring
+Mantel
+
+
+
+Zaubersprüche:
+Unsichtbar
+Untot
+Heilen
+Formwandeln
+
+
+
+
+Lieder:
+
+
+Aktionen:
+Selektieren
+Bewegen
+Reisen
+Tür öffnen/schließen
+Treppe steigen
+Nehmen
+Angreifen
+Eintreten
+Springen
+Manipulieren
+Ansprechen
+Benutzen
+Flüchten
+Ruhen
+Trinken
+Essen
+Kaufen
+Verkaufen
+Geben
+
+Steuerungsaktionen:
+Gruppieren
+Formieren
+
+
+Special Aktionen:
+Falle stellen
+Nachtsicht
+Gedankenlesen
+Falle entfernen
+Stehlen
+Zaubern
+Fallen suchen
+
+
+
+Fähigkeiten:
+Stärke
+Konstitution
+Geschicklichkeit
+Intelligenz
+Weisheit
+Karisma
+
+
+
+Rassen:
+Menschen
+Elfen
+Zwerge
+Gnome
+Halblinge
+Halb-Elfen
+Halb-Orcs
+
+
+Figuren:
+
+Krieger:
+Fighter
+Ranger
+Paladin
+Barbarian
+
+Priester:
+Cleric
+Druid
+Monk
+
+Schurken:
+Thief
+Bard
+
+Wizards:
+Mage
+Sorcerer
+
+Multiclass:
+Fighter/Thief
+Fighter/Cleric
+Fighter/Druid
+Fighter/Mage/Cleric
+Fighter/Mage/Thief
+Mage/Cleric
+Mage/Thief
+Cleric/Ranger
+Thief/Cleric
+
+Alignments:
+Lawful Good
+Neutral Good
+Chaotic Good
+Lawful Neutral
+True Neutral
+Chaotic Neutral
+Lawful Evil
+Neutral Evil
+Chaotic Evil
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+InGameMenus
+Areamap
+Worldmap
+Combatview
+Exploreview
+Journal
+Inventory
+Gamemenu
+Character
+Spellbook
+Priestscroll
+
+OverlayMenus
+InGameMenus
+Party Characters
+TextConsole
+QuickInventory
+Grouping
+HealthStatus
+
+EventMenus
+Dialog
+Story
+Trade Buy/Sell
+Inn Hotel
+Temple
+
+Editors
+Scenary
+Objects
+NPC
+Placement
+Monsters
+Rules
+Story
+

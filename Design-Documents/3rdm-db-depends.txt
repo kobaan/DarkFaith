@@ -1,0 +1,5 @@
+Clients Players	Near Figures	Near Objects	All Players	All Objects	World	Attack Rules	Defend Rules	Action Rules	Attack Rules	Defend Rules	World Rules
+Cache			Register			Cache			Register		
+Configurations						Rules					
+Database											
+

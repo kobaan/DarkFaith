@@ -1,0 +1,17 @@
+3rdm functions
+
+
+int f_CheckWeaponAllowed() {
+
+if
+nicht zu schwer (Spielerkonstitution)
+keine metallallergie bei metallwaffen
+hand frei fuer einhandwaffe
+beide haende frei fuer beidhandwaffe
+munition geladen
+return 1 else 0
+
+}
+
+
+

@@ -1,0 +1,87 @@
+Klasse Daten
+
+Eigenschaften:
+
+Name
+Beschreibung
+Volumen
+Gewicht
+Groesse
+Bild
+
+
+
+Klasse Objekt :: Daten
+
+Eigenschaften:
+
+Material
+Wirkung konventionell
+ (slash/pierce/blunt) (-=Schaden, +=Schutz, 0=neutral)
+Wirkung unkonventionell
+ (PSI/Magic) (-=Schaden, +=Schutz, 0=neutral)
+Abnutzung/Verschleiss/Verbrauch
+Typ
+ (Magie/PSI/Waffe/Ruestung/Artefakt/Objekt)
+Handhabung
+ (EinHand/ZweiHand/Kopf/Fuss/Brust)
+
+
+
+Klasse Figur :: Daten
+
+Eigenschaften:
+
+Geschlecht
+Bild real
+Einstellung
+Rasse
+ (auch Mischrassen)
+Klasse
+ (auch Mischklassen)
+Subklasse
+Superklasse
+ (falls noetig)
+Status
+ (Angegriffen/Tod/Neutral/Geht/Kauft/Verkauft/Redet/Nimmt/Gibt)
+Position
+
+evtl. Sub-Eigenschaften:
+
+Faehigkeiten in struct
+Konfiguration in struct
+Modifiers in struct
+
+
+Funktionen von Figur:
+
+Zaubern
+Gehen
+Bewegen
+ (Oeffnen, Drehen, Schieben)
+Stehlen
+Kaufen
+Verkaufen
+Angreifen
+Geben
+Nehmen
+Sterben
+Reden
+
+
+
+
+
+
+An anderer Stelle zu Verknüpfen:
+
+Ort/Position
+Status
+Besitz
+
+Regeln:
+
+Wer darf was benutzen ?
+Wer kann was tun ?
+Wer hat welche Fähigkeiten ?
+

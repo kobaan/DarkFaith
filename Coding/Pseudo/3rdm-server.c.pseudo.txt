@@ -1,0 +1,192 @@
+/* 3rd Millenium RPG Game
+   
+   server.c V0.0.001
+   
+   2002/05/27 - pseudo code (ab)
+*/
+
+// Pseudo-Code
+
+main() {
+
+
+/* ========================================================================= */
+/*               Server-Configuration and Initialization                     */
+/* ========================================================================= */
+
+
+ /* Process commandline and configuration */
+
+ processCommandline();
+ processConfig();
+
+
+
+ /* Initialize the server core, spawn status console, bind listener,
+    check weight tables, check stories. */
+
+ initServer() {
+	
+  /* create us a nice informational status output */
+  spawnStatusConsole();
+		
+  /* check if all game weighting tables are consistent */
+  checkWeightTables();
+		
+  /* check for the main story and/or game modules */
+  checkAvailStories();
+		
+  /* bind a network listener */
+  bindNetworkListener();
+		
+  /* if everything went fine, there's nothing to fear... */
+  if (error) exitHandler();
+ }
+
+
+/* ========================================================================= */
+/*     Client-Collection Loop, Search the Game-Master and Wait for Start     */
+/* ========================================================================= */
+
+	
+ /* Wait for Client-Connections and Gameconfiguration*/
+
+ started=0;
+
+ while (! started) {
+
+  /* wait for more clients */
+  checkForClient() {
+		
+  /* as long as there are clients connecting, accept them */
+  if (maxClients <= connectedClients) {
+   if (checkAccesslists()) acceptClient();
+				
+   /* give those orphans a client-id */
+   if (! client-id) {
+    assignClientId(client-connection)
+		
+    /* check if we caugth a MasterClient */
+    if ( readMasterFlag(client-id) && ! knownMasterClient) {
+     knownMasterClient=client-id;
+						
+     /* did the Master already start the game ? */
+     readMasterStartsGameFlag(client-id);
+						
+     /* if yes, read, check and distribute the game-config */
+     if (masterStartsGame=1) {
+      readMasterClientConfig();
+      checkMasterClientConfig();
+      setServerConfig();
+      setAllClientsConfig();
+					
+      /* exit the loop on no errors */
+      if (! errors) started = 1;
+     }
+    }
+   }
+  } else {
+   /* no master yet, but the max-clients reached, kick the latest one */
+   if (! knownMasterClient) kickClient(client-id);
+  }
+ }
+}
+
+
+/* ========================================================================= */
+/*                    Main Server-Loop, process Gameflow                     */
+/* ========================================================================= */
+
+
+ exit_loop=0;
+
+ /* Start the Serverloop */
+
+ while (! exit_loop) {
+
+  /* query the input subsystem */
+  inputSubSystem() {
+   /* get array of connected clients / in case of disconnect/or ip-change */
+   getClients(client-array);
+   if (lostClients()) checkLostClient();
+    /* query every client for input */
+    foreach client-id (client-array) {
+     getSettings(client-id);
+     getEvents(client-id);
+     /* proof against cheating */
+     checkValues();
+    }
+  }
+  
+  /* read in all game values */
+  lookupSubSystem() {
+   /* store Event changes, maybe better as case structure */
+   foreach event {
+    storeActions(event);
+    storeMovementns(event);
+    storeAdjustments(event);
+   }
+   readAffectedValues();
+  }
+  
+  /* calculate all game event changes */
+  calculationSubSystem() {
+   /* find out who's first */
+   FindEventOrder();
+   /* calculate Event changes, maybe better as case structure */
+   calculateActions(event);
+   calculateAttacks();
+   calculateDefence();
+   calculateMovementns(event);
+   calculateAdjustments(event);
+   calculateAffectedValues();
+   fillUpdateQueue();
+  }
+  
+  /* update all game values */
+  updateSubSystem() {
+   /* do Event changes, maybe better as case structure */
+   doAttack();
+   doDefence();
+   doActions(event);
+   doMovementns(event);
+   doAdjustments(event);
+   updateScenary();
+   updateObjects();
+   generateEvents();
+  }
+  
+  /* transmit the results to all clients */
+  outputSubSystem() {
+   /* generate and send data packets for each client */
+   foreach client-id (client-array) {
+    generateData(client-id);
+    sendPacket(client-id);
+   }
+  }
+  
+ }
+
+ exitHandler();
+ return(returncode);
+
+ }
+
+
+/* ========================================================================= */
+/*                            Handlers, Routines                             */
+/* ========================================================================= */
+
+
+/* Handle normal/abnormal program exit */
+
+exitHandler() {
+
+ /* Catch the occured error/non-error */
+ getReturnCode();
+	
+ /* Leave the program */
+ exit(returncode);
+
+}
+
